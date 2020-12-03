@@ -1,21 +1,12 @@
 import React from 'react';
-import {StyleSheet, Text} from 'react-native';
 
-import { Provider, connect } from 'react-redux';
+import { Provider } from 'react-redux';
 import Store from './src/Store.js';
 
 import Login from './Login.js'
 
-const App = (props) => {
-  return (
+export default () => (
     <Provider store={Store}>
       <Login />
     </Provider>
   );
-};
-
-const styles = StyleSheet.create({
-
-});
-
-export default App
